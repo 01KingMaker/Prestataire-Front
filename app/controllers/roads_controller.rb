@@ -13,4 +13,9 @@ class RoadsController < ApplicationController
     #$changerFormule(id: id)
     redirect_to root_path
   end
+  def trierPrestataire
+    route = Road.find(params[:id])
+
+    @prestataires = route.getTriedPrestator(nil)
+  end
 end

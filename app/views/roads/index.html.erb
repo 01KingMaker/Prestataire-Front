@@ -14,11 +14,10 @@
                 <%= road['formule'] %>
             </td>
             <td>
-
                 <%= link_to 'Changer la formule', roads_changerFormule_path(id: road['idroute']) %>
             </td>
             <td>
-                <a href='roads/trierPrestataire/<%= road['idroute']%>'><button>Trier les prestataires</button>
+                <%= link_to 'Trier prestataire', roads_trierPrestataire_path(id: road['idroute']) %>
             </td>
         </tr>
     <% end %>

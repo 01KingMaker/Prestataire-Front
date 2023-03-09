@@ -1,0 +1,17 @@
+
+<h1>Liste des prestataires</h1>
+<table border=1>
+    <tr>
+        <th> idprestataire </th> <th>nom</th> <th>prix </th> <th>vitesse</th> <th>employes</th>  <th>anciennete</th>
+    </tr>
+<% @prestataires.each do |p|%>
+    <tr>
+        <td><%=p['idprestataire']%></td>
+        <td><%=p['nom']%></td>
+        <td><%=p['prix']%></td>
+        <td><%=p['vitesse']%></td>
+        <td><%=p['employes']%></td>
+        <td><%=p['anciennete']%></td>
+    </td>
+<% end %>
+</table>
