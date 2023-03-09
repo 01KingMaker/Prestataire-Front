@@ -1,0 +1,1394 @@
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:31:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.4ms | Allocations: 931)
+Completed 200 OK in 45ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7980)
+
+
+Started GET "/ito" for 127.0.0.1 at 2023-03-08 17:33:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ito"):
+  
+Started GET "/ito.html.erb" for 127.0.0.1 at 2023-03-08 17:34:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ito.html.erb"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:44:03 -0500
+Processing by StartController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering start/index.html.erb within layouts/application
+  Rendered start/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 1047.4ms | Allocations: 93571)
+Completed 200 OK in 1076ms (Views: 1053.4ms | ActiveRecord: 0.0ms | Allocations: 98435)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:49:04 -0500
+Processing by StartController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering start/index.html.erb within layouts/application
+  Rendered start/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 14357)
+Completed 200 OK in 35ms (Views: 34.3ms | Allocations: 15212)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:01:56 -0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: prestataire2_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:02:39 -0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: prestataire2_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:02:46 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:03:41 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:04:35 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:04:36 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:04:37 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:04:38 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:04:50 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/rails/info/routes?path=sta" for 127.0.0.1 at 2023-03-08 18:04:55 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"sta"}
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4650)
+
+
+Started GET "/rails/info/routes?path=start" for 127.0.0.1 at 2023-03-08 18:04:56 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"start"}
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 698)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:05:47 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:06:12 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:06:21 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:06:22 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:06:28 -0500
+  
+ActionController::RoutingError (uninitialized constant RoadsController
+Did you mean?  RoadController
+               StartController):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:07:07 -0500
+Processing by RoadController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4987)
+
+
+  
+NameError (uninitialized constant RoadController::Road):
+  
+app/controllers/road_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:07:45 -0500
+  
+Zeitwerk::NameError (expected file /home/fabien/Documents/S4/programmation/Ruby/Pres/prestatairewebapplication/app/controllers/road_controller.rb to define constant RoadController, but didn't):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:08:33 -0500
+Processing by RoadsController#index as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 10070)
+
+
+  
+NameError (uninitialized constant RoadsController::Road):
+  
+app/controllers/road_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:09:58 -0500
+Processing by StartController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering start/index.html.erb within layouts/application
+  Rendered start/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 195.7ms | Allocations: 35276)
+Completed 200 OK in 200ms (Views: 198.7ms | ActiveRecord: 0.0ms | Allocations: 36464)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:25:44 -0500
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:26:19 -0500
+  [1m[35m (623.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (122.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230308231037_create_routes.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:27:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230308231037_create_routes.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:32:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230308231037_create_routes.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:32:38 -0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: prestataire2_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:32:57 -0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: prestataire2_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:33:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230308231037_create_routes.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8511326474226820965)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRoutes (20230308231037)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (139.6ms)[0m  [1m[35mCREATE TABLE "routes" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230308231037"]]
+  [1m[36mTRANSACTION (21.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-08 23:37:59.264447"], ["updated_at", "2023-03-08 23:37:59.264447"]]
+  [1m[36mTRANSACTION (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8511326474226820965)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:38:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 364.2ms | Allocations: 35471)
+Completed 200 OK in 391ms (Views: 367.3ms | ActiveRecord: 0.0ms | Allocations: 39494)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:41:04 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1639)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1724)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 2855)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @routes.each do |route|%>
+    4:     <li><%= route.nom %></li>
+    5: <% end%>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:43:08 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1339)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1424)
+Completed 500 Internal Server Error in 7ms (Allocations: 2252)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @routes.each do |route|%>
+    4:     <li><%= route.nom %></li>
+    5: <% end%>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:43:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2721)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2827)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 8845)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @routes.each do |route|%>
+    4:     <li><%= route.nom %></li>
+    5: <% end%>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:43:43 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1578)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1664)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2776)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @route.each do |r|%>
+    4:     <li><%= r.nom %></li>
+    5: <% end%>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:45:24 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1578)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1663)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2771)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @route.each do |r|%>
+    4:     <%= r.nom %>
+    5: <% end %>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2718)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2824)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 9632)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @route.each do |r|%>
+    4:     <%= r.nom %>
+    5: <% end %>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:18 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1388)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1464)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1811)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Routes#index</h1>
+    2: <p>Find me in app/views/routes/index.html.erb</p>
+    3: <% @route.each do |r|%>
+    4:     <%= r.nom %>
+    5: <% end %>
+  
+app/views/routes/index.html.erb:3
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:27 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.8ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:3
+  Rendered routes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 122.8ms | Allocations: 35791)
+Completed 200 OK in 128ms (Views: 125.5ms | ActiveRecord: 0.8ms | Allocations: 36955)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:30 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.9ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:3
+  Rendered routes/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2947)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.9ms | Allocations: 3308)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:30 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.6ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:3
+  Rendered routes/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 2932)
+Completed 200 OK in 38ms (Views: 24.1ms | ActiveRecord: 0.6ms | Allocations: 3271)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:42 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.4ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 813)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3704)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 4832)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:43 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.9ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 2946)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.9ms | Allocations: 3297)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:47:43 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (1.0ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 546)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 2950)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 1.0ms | Allocations: 3280)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:48:16 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.5ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1:in `puts'
+  Rendered routes/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 776)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3663)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.5ms | Allocations: 4795)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:48:45 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  Rendered routes/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 168)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3056)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 4214)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:48:56 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.5ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3717)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.5ms | Allocations: 4866)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:49:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.7ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1292)
+  Rendered layout layouts/application.html.erb (Duration: 117.9ms | Allocations: 36131)
+Completed 200 OK in 138ms (Views: 123.5ms | ActiveRecord: 0.7ms | Allocations: 43004)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:49:41 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.7ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 828)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3728)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.7ms | Allocations: 4924)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:49:44 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.8ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 558)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2948)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.8ms | Allocations: 3310)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:49:44 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.8ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 558)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 2960)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.8ms | Allocations: 3298)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:50:00 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.5ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2948)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.5ms | Allocations: 3278)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:50:02 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.4ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2939)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 3269)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:50:31 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.5ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 817)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 3706)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.5ms | Allocations: 4839)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:50:33 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (1.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2941)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 1.1ms | Allocations: 3302)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:51:22 -0500
+Processing by RoutesController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+  
+NameError (uninitialized constant RoutesController::Route):
+  
+app/controllers/routes_controller.rb:3:in `index'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:51:41 -0500
+Processing by RoutesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.7ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:1
+  Rendered routes/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 868)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 15493)
+Completed 200 OK in 49ms (Views: 42.2ms | ActiveRecord: 0.7ms | Allocations: 17416)
+
+
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:51:52 -0500
+Processing by RoutesController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4141)
+
+
+  
+NoMethodError (undefined method `base' for ApplicationRecord:Class):
+  
+app/models/route.rb:1:in `<main>'
+app/controllers/routes_controller.rb:3:in `index'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:51:53 -0500
+Processing by RoutesController#index as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 3725)
+
+
+  
+NoMethodError (undefined method `base' for ApplicationRecord:Class):
+  
+app/models/route.rb:1:in `<main>'
+app/controllers/routes_controller.rb:3:in `index'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:52:02 -0500
+Processing by RoutesController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3091)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base
+Did you mean?  Base64):
+  
+app/models/route.rb:1:in `<main>'
+app/controllers/routes_controller.rb:3:in `index'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:52:13 -0500
+Processing by RoutesController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3125)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base64):
+  
+app/models/route.rb:1:in `<main>'
+app/controllers/routes_controller.rb:3:in `index'
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:53:52 -0500
+  
+ActionController::RoutingError (uninitialized constant RoutesController
+Did you mean?  RoadsController):
+  
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:54:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/routes/index"):
+  
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:54:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/routes/index"):
+  
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:54:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/routes/index"):
+  
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:54:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/routes/index"):
+  
+Started GET "/routes/index" for 127.0.0.1 at 2023-03-08 18:55:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes/index"):
+  
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:55:47 -0500
+  
+Zeitwerk::NameError (expected file /home/fabien/Documents/S4/programmation/Ruby/Pres/prestatairewebapplication/app/controllers/roads_controller.rb to define constant RoadsController, but didn't):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:56:20 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 15850)
+  Rendered layout layouts/application.html.erb (Duration: 179.5ms | Allocations: 50624)
+Completed 200 OK in 198ms (Views: 174.5ms | ActiveRecord: 9.5ms | Allocations: 55456)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:56:38 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3733)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.5ms | Allocations: 4922)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:57:27 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:57:46 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2029)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 16660)
+Completed 200 OK in 57ms (Views: 45.0ms | ActiveRecord: 7.1ms | Allocations: 18589)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 18:58:11 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 847)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3736)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.6ms | Allocations: 4884)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:01:28 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3862)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.5ms | Allocations: 5011)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:01:47 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 839)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3718)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.8ms | Allocations: 4867)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:01:52 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 899)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3793)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 4951)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:02:15 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:1
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 853)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3769)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.6ms | Allocations: 4918)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:05:14 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 943)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3847)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.7ms | Allocations: 4996)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:06:26 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 958)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 3856)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.3ms | Allocations: 5005)
+
+
