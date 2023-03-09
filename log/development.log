@@ -1392,3 +1392,1597 @@ Processing by RoadsController#index as HTML
 Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.3ms | Allocations: 5005)
 
 
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:07:42 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.1ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 2966)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 1.1ms | Allocations: 3317)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:07:43 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (3.1ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 2969)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 3.1ms | Allocations: 3299)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:07:43 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 2975)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 1.0ms | Allocations: 3305)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:07:44 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.1ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 2969)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 1.1ms | Allocations: 3299)
+
+
+Started GET "/roads/index" for 127.0.0.1 at 2023-03-08 19:07:44 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2975)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.5ms | Allocations: 3305)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:36:49 -0500
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:37:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (36.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StartController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering start/index.html.erb within layouts/application
+  Rendered start/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 587.9ms | Allocations: 35418)
+Completed 200 OK in 619ms (Views: 592.7ms | ActiveRecord: 0.0ms | Allocations: 39301)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:38:38 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (135.1ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 849.4ms | Allocations: 15976)
+  Rendered layout layouts/application.html.erb (Duration: 948.9ms | Allocations: 30417)
+Completed 200 OK in 1273ms (Views: 560.9ms | ActiveRecord: 446.2ms | Allocations: 32233)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:40:53 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (2.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 1031)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 3937)
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 2.6ms | Allocations: 5112)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:40:54 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 605)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3001)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 3362)
+
+
+Started GET "/roads/changerFormule/" for 127.0.0.1 at 2023-03-09 03:40:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/roads/changerFormule"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:40:59 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 680)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 3197)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 1.9ms | Allocations: 3577)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:50:18 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 51.7ms | Allocations: 4049)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 6934)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 10.3ms | Allocations: 8057)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:51:04 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3924)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.8ms | Allocations: 5073)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:59:44 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 79.2ms | Allocations: 3625)
+  Rendered layout layouts/application.html.erb (Duration: 86.3ms | Allocations: 6024)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 11.4ms | Allocations: 6372)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:59:47 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 597)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2981)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.5ms | Allocations: 3312)
+
+
+Started GET "/roads/changerFormule/1" for 127.0.0.1 at 2023-03-09 03:59:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/roads/changerFormule/1"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-09 03:59:56 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 597)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2972)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 3302)
+
+
+Started GET "/roads/changerFormule/1" for 127.0.0.1 at 2023-03-09 04:00:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/roads/changerFormule/1"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:25:07 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 1686.6ms | Allocations: 3509)
+  Rendered layout layouts/application.html.erb (Duration: 2103.8ms | Allocations: 5903)
+Completed 200 OK in 3061ms (Views: 2523.7ms | ActiveRecord: 74.1ms | Allocations: 6232)
+
+
+Started GET "/roads/changerFormule/1" for 127.0.0.1 at 2023-03-09 06:25:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/roads/changerFormule/1"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:33:25 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:6
+  Rendered roads/index.html.erb within layouts/application (Duration: 117.7ms | Allocations: 5234)
+  Rendered layout layouts/application.html.erb (Duration: 199.4ms | Allocations: 19839)
+Completed 200 OK in 260ms (Views: 206.4ms | ActiveRecord: 10.4ms | Allocations: 21786)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:33:43 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1127)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3995)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.9ms | Allocations: 5143)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:33:44 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (3.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 3013)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 3.0ms | Allocations: 3365)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:33:44 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 3017)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.8ms | Allocations: 3348)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:34:01 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 85.3ms | Allocations: 1127)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 4002)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 0.5ms | Allocations: 5133)
+
+
+Started GET "/roads/changerFormule" for 127.0.0.1 at 2023-03-09 06:34:03 -0500
+Processing by RoadsController#changerFormule as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 1.0ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2502)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 06:35:03 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 2323)
+  Rendered layout layouts/application.html.erb (Duration: 130.7ms | Allocations: 16835)
+Completed 200 OK in 150ms (Views: 134.9ms | ActiveRecord: 11.1ms | Allocations: 18785)
+
+
+Started GET "/roads/changerFormule" for 127.0.0.1 at 2023-03-09 06:35:04 -0500
+Processing by RoadsController#changerFormule as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 1.1ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2511)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2904)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:47:57 -0500
+  
+Zeitwerk::NameError (expected file /home/fabien/Documents/S4/programmation/Ruby/Pres/prestatairewebapplication/app/controllers/prestataires_controller.rb to define constant PrestatairesController, but didn't):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:48:33 -0500
+Processing by PrestatairesController#getFirst as HTML
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 81.3ms | Allocations: 5779)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "prestataires" does not exist
+LINE 9:  WHERE a.attrelid = '"prestataires"'::regclass
+                            ^
+):
+  
+app/controllers/prestataires_controller.rb:3:in `getFirst'
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:51:30 -0500
+Processing by PrestatairesController#getFirst as HTML
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms | Allocations: 3171)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base
+Did you mean?  Base64):
+  
+app/models/prestataire.rb:1:in `<main>'
+app/controllers/prestataires_controller.rb:3:in `getFirst'
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:51:50 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (24.8ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+Completed 404 Not Found in 269ms (ActiveRecord: 37.7ms | Allocations: 3609)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Prestataire with 'idprestataire'=1):
+  
+app/controllers/prestataires_controller.rb:3:in `getFirst'
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:52:35 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (1.2ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 1.3ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 14786)
+Completed 200 OK in 182ms (Views: 70.8ms | ActiveRecord: 5.7ms | Allocations: 32717)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:53:02 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.5ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.8ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3045)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.5ms | Allocations: 4727)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:54:13 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.7ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.9ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3037)
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 4720)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:54:23 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.5ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 3051)
+Completed 200 OK in 79ms (Views: 73.7ms | ActiveRecord: 0.5ms | Allocations: 4734)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:54:54 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.7ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 1.0ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3060)
+Completed 200 OK in 23ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 4743)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:55:18 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.7ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.8ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3061)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 0.7ms | Allocations: 4744)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:55:19 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (1.4ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2384)
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 1.4ms | Allocations: 3260)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:55:19 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.4ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 2408)
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 0.4ms | Allocations: 3207)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 06:55:59 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.9ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.3ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 84.7ms | Allocations: 14332)
+Completed 200 OK in 121ms (Views: 88.1ms | ActiveRecord: 11.7ms | Allocations: 18607)
+
+
+Started GET "/roads/changerFormule" for 127.0.0.1 at 2023-03-09 07:08:50 -0500
+Processing by RoadsController#changerFormule as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 1.5ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 14468)
+Completed 200 OK in 50ms (Views: 48.9ms | Allocations: 15477)
+
+
+Started GET "/prestataires/getFirst" for 127.0.0.1 at 2023-03-09 07:09:23 -0500
+Processing by PrestatairesController#getFirst as HTML
+  [1m[36mPrestataire Load (0.4ms)[0m  [1m[34mSELECT "prestataire".* FROM "prestataire" WHERE "prestataire"."idprestataire" = $1 LIMIT $2[0m  [["idprestataire", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prestataires_controller.rb:3:in `getFirst'
+  Rendering layout layouts/application.html.erb
+  Rendering prestataires/getFirst.html.erb within layouts/application
+  Rendered prestataires/getFirst.html.erb within layouts/application (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 2702)
+Completed 200 OK in 87ms (Views: 23.2ms | ActiveRecord: 10.5ms | Allocations: 9771)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 07:12:57 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 2527)
+  Rendered layout layouts/application.html.erb (Duration: 91.6ms | Allocations: 17128)
+Completed 200 OK in 101ms (Views: 83.1ms | ActiveRecord: 12.9ms | Allocations: 19083)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:12:59 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (35.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 1.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2517)
+Completed 200 OK in 58ms (Views: 14.1ms | ActiveRecord: 35.8ms | Allocations: 4043)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 07:13:01 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2413)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 3217)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:13:04 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 2392)
+Completed 200 OK in 50ms (Views: 41.7ms | ActiveRecord: 0.8ms | Allocations: 3196)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:13:07 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 0.2ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2398)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.5ms | Allocations: 3202)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:13:27 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 1.5ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 3033)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.6ms | Allocations: 4642)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:13:44 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 2.2ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3047)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 4736)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:14:20 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 2.9ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 3076)
+Completed 200 OK in 45ms (Views: 38.5ms | ActiveRecord: 0.5ms | Allocations: 4764)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:17:36 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 218.5ms | Allocations: 4390)
+  Rendered layout layouts/application.html.erb (Duration: 220.2ms | Allocations: 4474)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.3ms | Allocations: 6131)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `roads_changerFormuleExecute_path' for #<ActionView::Base:0x00000000035750>
+Did you mean?  roads_changerFormule_path):
+    1: <h2>Modifier <%= @roads['nom'] %>
+    2:     <%= @roads['formule'] %>
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nom%>
+    5:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:23:00 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 475.3ms | Allocations: 4182)
+  Rendered layout layouts/application.html.erb (Duration: 515.9ms | Allocations: 18560)
+Completed 200 OK in 620ms (Views: 519.6ms | ActiveRecord: 17.7ms | Allocations: 25758)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:24:41 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 64.4ms | Allocations: 2113)
+  Rendered layout layouts/application.html.erb (Duration: 85.0ms | Allocations: 4714)
+Completed 200 OK in 97ms (Views: 89.9ms | ActiveRecord: 0.7ms | Allocations: 6453)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 07:24:45 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:24:45 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1626)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3910)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 1.4ms | Allocations: 4820)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:55:14 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 44.8ms | Allocations: 2935)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 3019)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 10.2ms | Allocations: 10128)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fa2598c0ca0 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x0000000003d720>, @object=nil, @object_name=nil, @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  hidden_field):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field_tag :secret_key, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:55:38 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 181.0ms | Allocations: 2328)
+  Rendered layout layouts/application.html.erb (Duration: 181.6ms | Allocations: 2412)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.5ms | Allocations: 4084)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into Hash):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field :secret_key, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:58:12 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 28.2ms | Allocations: 2251)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 2335)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 23.2ms | Allocations: 6646)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into Hash):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field :idroute, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:58:16 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1951)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2026)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 2876)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into Hash):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field :idroute, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:58:28 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1997)
+  Rendered layout layouts/application.html.erb (Duration: 216.0ms | Allocations: 16342)
+Completed 200 OK in 230ms (Views: 223.1ms | ActiveRecord: 0.9ms | Allocations: 17971)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 07:58:54 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 07:58:54 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (2.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1543)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 3724)
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 2.4ms | Allocations: 4603)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 08:02:26 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2405)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.5ms | Allocations: 3994)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into Hash):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field :idroute, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 08:02:40 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2970)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3054)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.7ms | Allocations: 4725)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fa2540a53b8 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x000000000425e0>, @object=nil, @object_name=nil, @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  hidden_field):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field_tag :idroute, @roads['idroute']%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 08:04:57 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2967)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3051)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms | Allocations: 4722)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fa25888ead0 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x00000000042900>, @object=nil, @object_name=nil, @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  hidden_field):
+    3:     <%= form_with url: roads_changerFormuleExecute_path do |f| %>
+    4:         <%= f.label :nformule%>
+    5:         <%= f.text_field :nformule%>
+    6:         <%= f.hidden_field_tag :idroute%>
+    7:         <%= f.submit %>
+    8:     <% end %>
+  
+app/views/roads/changerFormule.html.erb:6
+app/views/roads/changerFormule.html.erb:3
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 08:10:51 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 50.2ms | Allocations: 9468)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 12136)
+Completed 200 OK in 147ms (Views: 86.3ms | ActiveRecord: 11.8ms | Allocations: 16902)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:09:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (37.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (20.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 97.1ms | Allocations: 4857)
+  Rendered layout layouts/application.html.erb (Duration: 543.7ms | Allocations: 39884)
+Completed 200 OK in 883ms (Views: 567.2ms | ActiveRecord: 91.0ms | Allocations: 64412)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:10:06 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:10:07 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 16289)
+Completed 200 OK in 101ms (Views: 67.6ms | ActiveRecord: 13.4ms | Allocations: 20280)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:12:15 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2426)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 16771)
+Completed 200 OK in 64ms (Views: 44.4ms | ActiveRecord: 6.9ms | Allocations: 21068)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:12:19 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:12:19 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2027)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4224)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 5104)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:14:09 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:14:09 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2167)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 16268)
+Completed 200 OK in 66ms (Views: 45.9ms | ActiveRecord: 7.8ms | Allocations: 20173)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:16:42 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2421)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 16662)
+Completed 200 OK in 56ms (Views: 34.6ms | ActiveRecord: 7.5ms | Allocations: 20919)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:16:44 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:16:45 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2023)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4204)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 5097)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:16:48 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:16:48 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:16:48 -0500
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2098)
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 19885)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 0.4ms | Allocations: 21252)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:16:49 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:16:59 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:16:59 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2024)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4217)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 5020)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:17:02 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:17:02 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2002)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4183)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 4985)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:22:08 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2427)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 16754)
+Completed 200 OK in 61ms (Views: 40.1ms | ActiveRecord: 8.5ms | Allocations: 21072)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:22:10 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:22:10 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2023)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4220)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 5100)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:25:30 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:25:30 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2421)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 16764)
+Completed 200 OK in 56ms (Views: 37.9ms | ActiveRecord: 6.6ms | Allocations: 20994)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:25:46 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2150)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 16177)
+Completed 200 OK in 55ms (Views: 37.1ms | ActiveRecord: 6.4ms | Allocations: 20068)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:25:49 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:25:49 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2029)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4210)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.4ms | Allocations: 5088)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:25:49 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:25:50 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1995)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4192)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.5ms | Allocations: 5064)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:25:50 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:25:50 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:26:28 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2147)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 16264)
+Completed 200 OK in 56ms (Views: 35.2ms | ActiveRecord: 7.2ms | Allocations: 20215)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:26:30 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:26:31 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2024)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4217)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 5096)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:26:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:26:42 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4140)
+  Rendered layout layouts/application.html.erb (Duration: 135.0ms | Allocations: 38820)
+Completed 200 OK in 205ms (Views: 137.8ms | ActiveRecord: 8.7ms | Allocations: 61352)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:26:48 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/roads/changerFormuleExecute"):
+  
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:26:48 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2053)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4234)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.6ms | Allocations: 5132)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:27:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 21.5ms | Allocations: 4855)
+  Rendered layout layouts/application.html.erb (Duration: 134.7ms | Allocations: 39274)
+Completed 200 OK in 189ms (Views: 139.0ms | ActiveRecord: 9.4ms | Allocations: 63806)
+
+
+Started POST "/roads/changerFormuleExecute" for 127.0.0.1 at 2023-03-09 11:27:49 -0500
+Processing by RoadsController#changerFormuleExecute as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "nformule"=>"adfs", "idroute"=>"1", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormuleExecute.html.erb within layouts/application
+  Rendered roads/changerFormuleExecute.html.erb within layouts/application (Duration: 0.8ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2503)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3371)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:30:40 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2064)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 16682)
+Completed 200 OK in 64ms (Views: 42.6ms | ActiveRecord: 7.6ms | Allocations: 21024)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=fdsfsdfsdfdsf&idroute=1&commit=Save+" for 127.0.0.1 at 2023-03-09 11:30:52 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"fdsfsdfsdfdsf", "idroute"=>"1", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormuleExecute.html.erb within layouts/application
+  Rendered roads/changerFormuleExecute.html.erb within layouts/application (Duration: 0.8ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2512)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2912)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:31:28 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.2ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1784)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 16126)
+Completed 200 OK in 61ms (Views: 40.0ms | ActiveRecord: 8.0ms | Allocations: 20030)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=fdsfsdfsdfdsf&idroute=1&commit=Save+" for 127.0.0.1 at 2023-03-09 11:31:31 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"fdsfsdfsdfdsf", "idroute"=>"1", "commit"=>"Save "}
+  [1m[36mRoad Update All (121.6ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "fdsfsdfsdfdsf"], ["idroute", 1]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+  [1m[36mRoad Load (2.3ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:13:in `changerFormuleExecute'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormuleExecute.html.erb within layouts/application
+  Rendered roads/changerFormuleExecute.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2402)
+Completed 200 OK in 148ms (Views: 12.1ms | ActiveRecord: 123.9ms | Allocations: 3944)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:31:54 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2130)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4982)
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 1.5ms | Allocations: 6636)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=fdsfsdfsdfdsf&idroute=1&commit=Save+" for 127.0.0.1 at 2023-03-09 11:31:56 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"fdsfsdfsdfdsf", "idroute"=>"1", "commit"=>"Save "}
+  [1m[36mRoad Update All (110.1ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "fdsfsdfsdfdsf"], ["idroute", 1]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+  [1m[36mRoad Load (0.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:13:in `changerFormuleExecute'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormuleExecute.html.erb within layouts/application
+  Rendered roads/changerFormuleExecute.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1978)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4344)
+Completed 200 OK in 140ms (Views: 20.3ms | ActiveRecord: 111.0ms | Allocations: 5834)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=3*vitesse-2*employe%2B1*anciennete&idroute=1&commit=Save+" for 127.0.0.1 at 2023-03-09 11:32:29 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"3*vitesse-2*employe+1*anciennete", "idroute"=>"1", "commit"=>"Save "}
+  [1m[36mRoad Update All (44.9ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "3*vitesse-2*employe+1*anciennete"], ["idroute", 1]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+  [1m[36mRoad Load (0.8ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:13:in `changerFormuleExecute'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormuleExecute.html.erb within layouts/application
+  Rendered roads/changerFormuleExecute.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4119)
+Completed 200 OK in 69ms (Views: 15.7ms | ActiveRecord: 45.7ms | Allocations: 5387)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:36:04 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2457)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 16738)
+Completed 200 OK in 53ms (Views: 42.5ms | ActiveRecord: 6.7ms | Allocations: 18416)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 11:36:05 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1725)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4101)
+Completed 200 OK in 30ms (Views: 22.2ms | ActiveRecord: 0.6ms | Allocations: 5563)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=4&idroute=2&commit=Save+" for 127.0.0.1 at 2023-03-09 11:36:07 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"4", "idroute"=>"2", "commit"=>"Save "}
+  [1m[36mRoad Update All (68.1ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "4"], ["idroute", 2]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 68.1ms | Allocations: 1016)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/roads_controller.rb:5:in `changerFormule'
+app/controllers/roads_controller.rb:13:in `changerFormuleExecute'
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:36:31 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2103)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 16507)
+Completed 200 OK in 52ms (Views: 41.7ms | ActiveRecord: 6.6ms | Allocations: 18119)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:36:31 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 738)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3112)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 3462)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:36:33 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (1.1ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 738)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 3109)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 1.1ms | Allocations: 3439)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:11 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.7ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 738)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3130)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.7ms | Allocations: 3460)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:37:12 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (1.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 4112)
+Completed 200 OK in 37ms (Views: 22.5ms | ActiveRecord: 1.0ms | Allocations: 5558)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=tuy&idroute=1&commit=Save+" for 127.0.0.1 at 2023-03-09 11:37:14 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"tuy", "idroute"=>"1", "commit"=>"Save "}
+  [1m[36mRoad Update All (33.8ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "tuy"], ["idroute", 1]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 33.8ms | Allocations: 750)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:14 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3147)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 3479)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 11:37:16 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.6ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4092)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.6ms | Allocations: 4896)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=furyyy&idroute=2&commit=Save+" for 127.0.0.1 at 2023-03-09 11:37:19 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"furyyy", "idroute"=>"2", "commit"=>"Save "}
+  [1m[36mRoad Update All (60.0ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "furyyy"], ["idroute", 2]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms (ActiveRecord: 60.0ms | Allocations: 654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:19 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3129)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.5ms | Allocations: 3461)
+
+
+Started GET "/roads/changerFormule?id=1" for 127.0.0.1 at 2023-03-09 11:37:20 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoad Load (2.0ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 1], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 4097)
+Completed 200 OK in 38ms (Views: 28.6ms | ActiveRecord: 2.0ms | Allocations: 4901)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 11:37:24 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 4100)
+Completed 200 OK in 41ms (Views: 32.2ms | ActiveRecord: 0.9ms | Allocations: 4905)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=nemANU&idroute=2&commit=Save+" for 127.0.0.1 at 2023-03-09 11:37:28 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"nemANU", "idroute"=>"2", "commit"=>"Save "}
+  [1m[36mRoad Update All (58.7ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "nemANU"], ["idroute", 2]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms (ActiveRecord: 58.7ms | Allocations: 654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:28 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.9ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 3138)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.9ms | Allocations: 3470)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 11:37:30 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4118)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 4922)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=gregerg&idroute=2&commit=Save+" for 127.0.0.1 at 2023-03-09 11:37:32 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"gregerg", "idroute"=>"2", "commit"=>"Save "}
+  [1m[36mRoad Update All (42.3ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "gregerg"], ["idroute", 2]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 42.3ms | Allocations: 654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:33 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3114)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 3446)
+
+
+Started GET "/roads/changerFormule?id=2" for 127.0.0.1 at 2023-03-09 11:37:34 -0500
+Processing by RoadsController#changerFormule as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRoad Load (0.4ms)[0m  [1m[34mSELECT "roads".* FROM "roads" WHERE "roads"."idroute" = $1 LIMIT $2[0m  [["idroute", 2], ["LIMIT", 1]]
+  ↳ app/controllers/roads_controller.rb:7:in `changerFormule'
+  Rendering layout layouts/application.html.erb
+  Rendering roads/changerFormule.html.erb within layouts/application
+  Rendered roads/changerFormule.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4103)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 4907)
+
+
+Started GET "/roads/changerFormuleExecute?nformule=ggggg&idroute=2&commit=Save+" for 127.0.0.1 at 2023-03-09 11:37:36 -0500
+Processing by RoadsController#changerFormuleExecute as HTML
+  Parameters: {"nformule"=>"ggggg", "idroute"=>"2", "commit"=>"Save "}
+  [1m[36mRoad Update All (60.8ms)[0m  [1m[33mUPDATE "roads" SET "formule" = $1 WHERE "roads"."idroute" = $2[0m  [["formule", "ggggg"], ["idroute", 2]]
+  ↳ app/controllers/roads_controller.rb:12:in `changerFormuleExecute'
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 60.8ms | Allocations: 654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-09 11:37:36 -0500
+Processing by RoadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering roads/index.html.erb within layouts/application
+  [1m[36mRoad Load (0.5ms)[0m  [1m[34mSELECT "roads".* FROM "roads"[0m
+  ↳ app/views/roads/index.html.erb:8
+  Rendered roads/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3126)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.5ms | Allocations: 3458)
+
+

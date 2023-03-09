@@ -1,0 +1,8 @@
+<h2>Modifier <%= @roads['nom'] %>
+    <%= @roads['formule'] %>
+    <%= form_with url: roads_changerFormuleExecute_path, method: :get do |f| %>
+        <%= f.label :nformule%>
+        <%= f.text_field :nformule%>
+        <%= f.hidden_field :idroute, value:@roads['idroute']%>
+        <%= f.submit %>
+    <% end %>

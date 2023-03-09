@@ -1,7 +1,9 @@
 <h1>Liste des routes</h1>
+<%= link_to 'Changer la formule', roads_changerFormule_path %>
 <table border=1>
 <tr>
     <th>libelle</th><th>Formule</th>
+
 </tr>
     <% @roads.each do |road|%>
         <tr>
@@ -12,10 +14,11 @@
                 <%= road['formule'] %>
             </td>
             <td>
-                <button>Changer la formule</button>
+
+                <%= link_to 'Changer la formule', roads_changerFormule_path(id: road['idroute']) %>
             </td>
             <td>
-                <button>Trier les prestataires</button>
+                <a href='roads/trierPrestataire/<%= road['idroute']%>'><button>Trier les prestataires</button>
             </td>
         </tr>
     <% end %>
